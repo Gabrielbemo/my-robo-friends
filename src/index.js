@@ -8,11 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { searchRobots } from './reducers';
 import 'tachyons';
 
-const store = createStore(searchRobots)
+const store = createStore(searchRobots);
 
-ReactDOM.render(
-    <Provider>
-        <App store={store} />
-    </Provider>,
-    document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

@@ -1,6 +1,6 @@
 import { CHANGE_SEARCH_FIELD } from './constants.js'
 
-const initialState = {
+export const initialState = {
     searchField: ''
 }
 
